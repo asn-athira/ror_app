@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <%= render partial: 'layouts/user/head' %>
+
+  <body >
+    <div class="loader"></div>
+    <%= render partial: 'layouts/user/header' %>
+
+    <%= yield %>
+
+    <%= render partial: 'layouts/user/footer' %>
+
+    <%= render partial: 'layouts/user/script' %>
+ 
+    <div id="GENERIC_MODAL_DIV">
+    </div>
+  
+  	
+    <script type="text/javascript">
+
+      <%= yield :javascript_footer -%>
+    </script>
+    
+  </body>
+</html>

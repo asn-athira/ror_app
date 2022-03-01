@@ -1,0 +1,19 @@
+<% if @user.errors.blank? %>
+
+  // Showing Growl Like Message
+  notifySuccess("<%= escape_javascript(@notification[:title]) %>", "<%= escape_javascript(@notification[:message]) %>");
+  
+  window.setInterval('refresh()', 1000);   
+    
+    function refresh() {
+        window .location.reload();
+    }           
+
+<% else %>
+
+  // Showing Growl Like Message
+  notifyError("<%= escape_javascript(@notification[:title]) %>", "<%= escape_javascript(@notification[:message]) %>");
+
+
+<% end %>
+

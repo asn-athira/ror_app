@@ -1,0 +1,27 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  username: root
+  password: root
+  pool: 5
+  timeout: 5000
+  host: localhost
+  database: ror_app_development
+test:
+  adapter: postgresql
+  encoding: unicode
+  username: root
+  password: root
+  pool: 5
+  timeout: 5000
+  host: localhost
+  database: ror_app_test
+production:
+  adapter: postgresql
+  encoding: unicode
+  username: 
+  password: 
+  pool: 5
+  timeout: 5000
+  host: 
+  database: ror_app_production
