@@ -12,9 +12,9 @@
 
 <% else %>
 
-  // Showing Growl Like Message
-  notifyError("<%= escape_javascript(@notification[:title]) %>", "<%= escape_javascript(@notification[:message]) %>");
-
+  <% @user.errors.full_messages.each do |error_message| %>
+    notifyError("<%= escape_javascript(@notification[:title]) %>", "<%= error_message if @user.errors.full_messages.first == error_message %> ");    
+  <% end %>
   
 <% end %>
 

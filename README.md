@@ -1,25 +1,19 @@
 # README
+This is ROR APP for managing users.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# App depencies
+  * rails 5.2
+  * ruby 2.6
+  * postgress 0.18
 
-Things you may want to cover:
+# css : tailwind ui
 
-* Ruby version
+# setup the application:
+  * git clone https://github.com/asn-athira/ror_app
+  * rails db:create db:migrate
+  * bundle install
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# run the app
+  * rails s
+  
 # ror_app

@@ -1,10 +1,10 @@
 <%= form_with(model: @user, remote: true) do |f| %>
   <div class="row">
     <div class="col-md-4">
-      <%= f.label :name , :class => ""%>
+      <%= f.label :name , :class => "form-controll" %>
     </div>
     <div class="col-md-4">
-      <%= f.text_field :name, :class => "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+      <%= f.text_field :name, :class => "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", :required => true %>
     </div> 
   </div>
   <div class="row">
@@ -12,7 +12,7 @@
       <%= f.label :address, :class => "form-controll" %>
     </div>
     <div class="col-md-4">
-      <%= f.text_field :address, :class => "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+      <%= f.text_field :address, :class => "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", :required => true %>
     </div>
   </div>
   <div class="row">
@@ -20,7 +20,7 @@
       <%= f.label :phone, :class => "form-controll" %>
     </div>
     <div class="col-md-4">
-      <%= f.text_field :phone, :class => "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+      <%= f.text_field :phone, :class => "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", :required => true %>
     </div>
   </div>
   <div class="row">
@@ -28,7 +28,7 @@
       <%= f.label :email , :class => "form-controll"%>
     </div>
     <div class="col-md-4">
-      <%= f.text_field :email, :class => "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+      <%= f.text_field :email, :class => "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline", :required => true %>
     </div>
   </div>
   <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
